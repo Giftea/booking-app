@@ -14,6 +14,6 @@ router.post("/", verifyAdmin, createHotel);
 router.put("/:id", verifyAdmin, updateHotel);
 router.get("/:id", getSingleHotel);
 router.get("/", getAllHotel);
-router.delete("/:id", deleteHotel);
+router.delete("/:id",verifyAdmin, deleteHotel);
 
 export default router;
